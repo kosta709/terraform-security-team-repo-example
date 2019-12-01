@@ -21,6 +21,15 @@ public_sg_allow_ports_rules = [
     ]
   },
   {
+    description = "allow-ssh"
+    from_port = "22"
+    to_port = "22"
+    protocol = "tcp"
+    cidr_blocks = [
+      "85.64.0.0/16"
+    ]
+  },
+  {
     description = "rule-1"
     from_port = "32000"
     to_port = "33000"
